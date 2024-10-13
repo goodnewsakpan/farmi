@@ -12,7 +12,7 @@
 
 ## Team Members: 
 Name: Goodnews Akpan (Frontend Engineer) and 
-Name: Kenechukwu Akubue (Backend Engineer)
+Kenechukwu Akubue (Backend Engineer)
 
 Email Adresses: goodnewsakpan123@gmail.com and kengoon19@gmail.com
 
