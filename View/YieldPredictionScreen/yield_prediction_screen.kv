@@ -1,0 +1,57 @@
+<YieldPredictionScreenView>
+    name: 'yield prediction screen'
+    MDBoxLayout:
+        orientation: "vertical"
+        MDTopAppBar:
+            type: "small"
+            MDTopAppBarLeadingButtonContainer:
+                MDActionTopAppBarButton:
+                    icon: "arrow-left"
+                    on_release: root.switch_screen("home screen")
+            MDTopAppBarTitle:
+                text: "Yield Prediction"
+                theme_font_size: "Custom"
+                font_size: "18sp"
+                bold: True
+        MDScrollView:
+            id: sv
+            bar_width: 0
+            MDBoxLayout:
+                id: sv_list
+                spacing: "20dp"
+                padding: "20dp"
+                orientation: "vertical"
+                adaptive_height: True
+        MDBoxLayout:
+            adaptive_height: True
+            spacing: "10dp"
+            padding: "10dp"
+#            MDRelativeLayout:
+#                size_hint: None, None
+#                size: box.width, ((dp(10) * 3) + sp(16))
+#                MDBoxLayout:
+#                    id: box
+#                    adaptive_size: True
+#                    pos_hint: {"center": [.5, .5]}
+#                    MDIconButton:
+#                        id: plus_icon
+#                        icon: "plus"
+#                        theme_bg_color: "Custom"
+#                        md_bg_color: self.theme_cls.surfaceContainerHighColor
+#                        on_release: root.add_image_icons(box)
+            TextField:
+                id: text_field
+                theme_bg_color: "Custom"
+                hint_text: "Message"
+                pos_hint: {"center_y": .5}
+                multiline: True
+            MDRelativeLayout:
+                size_hint: None, None
+                size: dp(40), ((dp(10) * 3) + sp(16))
+                MDIconButton:
+                    style: "filled"
+                    icon: "arrow-up"
+                    pos_hint: {"center": [.5, .5]}
+                    on_release:
+                        root.user_chat(text_field.text)
+                        text_field.text = ""
