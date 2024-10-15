@@ -24,4 +24,4 @@ Integrated Backend Infrastructures
 Full-stack developer
 
 ## PS:
-The app size is around 48 mb due to armeabi-v7a and arm64-v8a are mearged together, just for testing purpose. When deployed to playstore, the size will split in half making it just 24mb each
+The app size is around 48 mb due to armeabi-v7a and arm64-v8a are merged together, just for testing purpose. When deployed to playstore, the size will split in half making it just 24mb each
