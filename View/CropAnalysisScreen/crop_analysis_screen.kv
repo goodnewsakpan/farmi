@@ -1,0 +1,102 @@
+<CropAnalysisScreenView>
+    name: 'crop analysis screen'
+    MDBoxLayout:
+        orientation: "vertical"
+        MDTopAppBar:
+            type: "small"
+            MDTopAppBarLeadingButtonContainer:
+                MDActionTopAppBarButton:
+                    icon: "arrow-left"
+                    on_release: root.switch_screen("home screen")
+            MDTopAppBarTitle:
+                text: "Crop Analysis"
+        MDBoxLayout:
+            padding: "20dp"
+            spacing: "20dp"
+            orientation: "vertical"
+            MDBoxLayout:
+                md_bg_color: self.theme_cls.surfaceContainerHighestColor
+                radius: "16dp"
+                MDRelativeLayout:
+                    MDIcon:
+                        theme_font_size: "Custom"
+                        font_size: "50sp"
+                        icon: "camera-image"
+                        pos_hint: {"center": [.5, .5]}
+                        theme_icon_color: "Custom"
+                        icon_color: self.theme_cls.disabledTextColor
+                    CoverImage:
+                        id: cover_image
+                        radius: self.parent.parent.radius
+                        color: [0, 0, 0, 0] if not self.source else "white"
+            MDLabel:
+                text: "Upload crop image via:"
+                adaptive_height: True
+                bold: True
+            MDGridLayout:
+                cols: 2
+                rows: 1
+                adaptive_height: True
+                spacing: "20dp"
+                MDCard:
+                    size_hint_y: None
+                    height: self.width
+                    orientation: "vertical"
+                    padding: "15dp"
+                    spacing: "15dp"
+                    radius: "30dp"
+                    on_release: root.take_picture()
+                    MDRelativeLayout:
+                        MDIcon:
+                            theme_font_size: "Custom"
+                            font_size: "50sp"
+                            icon: "camera"
+                            pos_hint: {"center": [.5, .5]}
+                    MDLabel
+                        halign: "center"
+                        adaptive_height: True
+                        text: "Camera"
+                        role: "medium"
+                MDCard:
+                    size_hint_y: None
+                    height: self.width
+                    orientation: "vertical"
+                    padding: "15dp"
+                    spacing: "15dp"
+                    radius: "30dp"
+                    on_release: root.open_photo_picker()
+                    MDRelativeLayout:
+                        MDIcon:
+                            theme_font_size: "Custom"
+                            font_size: "50sp"
+                            icon: "folder-image"
+                            pos_hint: {"center": [.5, .5]}
+                    MDLabel
+                        halign: "center"
+                        adaptive_height: True
+                        text: "Photo picker"
+                        role: "medium"
+            MDBoxLayout:
+                adaptive_height: True
+                spacing: "10dp"
+                orientation: "vertical"
+                TextField:
+                    id: text_field
+                    theme_bg_color: "Custom"
+                    hint_text: "Soil pH (Optional)"
+                    pos_hint: {"center_y": .5}
+                    input_filter: "int"
+                    input_type: "number"
+                    radius: self.height / 2
+                MDButton:
+                    theme_width: "Custom"
+                    size_hint_x: 1
+                    theme_bg_color: "Custom"
+                    md_bg_color: self.theme_cls.primaryColor
+                    on_release: root.start_analysis(text_field.text)
+                    MDButtonText:
+                        text: "Start Analysis"
+                        theme_text_color: "Custom"
+                        text_color: self.theme_cls.surfaceColor
+                        pos_hint: {"center": [.5, .5]}
+
