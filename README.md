@@ -51,13 +51,14 @@ a rapidly changing agricultural landscape.
 
 ### Team
 
-Name: Kenechukwu Akubue (Software Engineer)
+Name: Kenechukwu Akubue (Backend Engineer)
+Name: Goodnews Akpan (Frontend Engineer)
 ### Team
 
 Name: Kenechukwu Akubue (Software Engineer)
 
 Email: kengoon19@gmail.com
-Email: kengoon19@gmail.com
+Email: godnewsakpan123@gmail.com
 
 **Contribution:**
 - Built mobile app
