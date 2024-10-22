@@ -57,17 +57,18 @@ Name: Goodnews Akpan (Frontend Engineer)
 Email: kengoon19@gmail.com
 Email: godnewsakpan123@gmail.com
 
-**Contribution:**
-- Built mobile app
-- Fine-tuned AI prompts and models
-- Integrated Backend Infrastructures
-- Full-stack developer
-**Contribution:**
-- Built mobile app
-- Fine-tuned AI prompts and models
-- Integrated Backend Infrastructures
-- Full-stack developer
+**Goodnews Contribution:**
+- Created user-friendly dashboard layout for crop yield predictions
+- Implemented responsive design for mobile view
+- Added chart components for visualizing yield predictions
+- Resolved styling issues in plant health analysis component
 
-#### PS:
+**Kenechukwu Contribution:**
+- Built mobile app
+- Fine-tuned AI prompts and models
+- Integrated Backend Infrastructures
+- Full-stack developer
+- Correct error handling in API responses for improved client communication
+- Implement RESTful API endpoints for crop yield predictions
 #### PS:
 The app size is around 48 mb due to armeabi-v7a and arm64-v8a are mearged together, just for testing purpose. When deployed to playstore, the size will split in half making it just 24mb each
