@@ -9,4 +9,4 @@ def register_factory():
     register("TextField", module="Components.textfield")
     register("TagTextField", module="Components.textfield")
     register("Dot", module="Components.dot")
-    register("DotSpinner", module="Components.spinner")
+"    register("DotSpinner", module="Components.spinner")
