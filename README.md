@@ -1,4 +1,6 @@
 # Farmi
+> [!NOTE]
+> This project has been moved back to the original repository [here](https://github.com/kengoon/farmi)
 ### Farmi AI: Revolutionizing Nigerian Agriculture with AI-Driven Insights
 
 **Farmi AI** is an innovative agricultural intelligence platform designed to empower Nigerian farmers with cutting-edge,
